@@ -19,7 +19,7 @@ jobs:
       - name: Setup Xcode
         uses: maxim-lobanov/setup-xcode@v1
         with:
-          xcode-version: "16.2"
+          xcode-version: "26.2"
 
       - name: Show Xcode version
         run: xcodebuild -version
@@ -64,7 +64,7 @@ jobs:
 
       - name: Build
         run: |
-          echo "Building with Xcode 16.2..."
+          echo "Building with Xcode 26.2..."
           # Replace with your scheme / workspace when the iOS project is added, e.g.:
           # xcodebuild -workspace YourApp.xcworkspace -scheme YourApp -destination 'platform=iOS Simulator,name=iPhone 16' build
           # Or for SPM-only: swift build
@@ -81,7 +81,7 @@ jobs:
       - name: Setup Xcode
         uses: maxim-lobanov/setup-xcode@v1
         with:
-          xcode-version: "16.2"
+          xcode-version: "26.2"
 
       - name: Show Xcode version
         run: xcodebuild -version
@@ -126,7 +126,7 @@ jobs:
 
       - name: Test
         run: |
-          echo "Running tests with Xcode 16.2..."
+          echo "Running tests with Xcode 26.2..."
           # Replace with your scheme / workspace when the iOS project is added, e.g.:
           # xcodebuild -workspace YourApp.xcworkspace -scheme YourApp -destination 'platform=iOS Simulator,name=iPhone 16' test
           # Or for SPM-only: swift test
